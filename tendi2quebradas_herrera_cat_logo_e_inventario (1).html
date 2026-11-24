@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendi2Quebradas Herrera | Confort y Estilo para tu Hogar</title>
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* =========================================================
+           SISTEMA DE DISEÑO INTEGRADO (100% AUTÓNOMO SIN CDN)
+           ========================================================= */
+        :root {
+            --brand-50: #fdf8f6;
+            --brand-100: #f2e8e5;
+            --brand-200: #eaddd7;
+            --brand-300: #e0cec7;
+            --brand-500: #a37b6d;
+            --brand-600: #8a6254;
+            --brand-700: #724e42;
+            --brand-800: #5e4036;
+            --brand-900: #4e362e;
+            --whatsapp-500: #25D366;
+            --whatsapp-600: #128C7E;
+            --stone-400: #a8a29e;
+            --stone-500: #78716c;
+            --stone-600: #57534e;
+            --stone-800: #292524;
+            --stone-900: #1c1917;
+            --emerald-50: #ecfdf5;
+            --emerald-100: #d1fae5;
+            --emerald-200: #a7f3d0;
+            --emerald-600: #059669;
+            --emerald-700: #047857;
+            --emerald-800: #065f46;
+            --amber-100: #fef3c7;
+            --amber-500: #f59e0b;
+            --amber-600: #d97706;
+            --amber-800: #92400e;
+            --red-100: #fee2e2;
+            --red-600: #dc2626;
+            --red-700: #b91c1c;
+            --blue-50: #eff6ff;
+            --blue-600: #2563eb;
+            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--brand-50);
+            color: var(--stone-800);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        button, input, select {
+            font-family: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .container { padding: 0 1.5rem; }
+        }
+        @media (min-width: 1024px) {
+            .container { padding: 0 2rem; }
+        }
+
+        /* --- Animaciones --- */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceShort {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.25); }
+        }
+        @keyframes ping {
+            75%, 100% { transform: scale(2); opacity: 0; }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .6; }
+        }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-fade-up { animation: fadeUp 0.45s ease-out forwards; }
+        .animate-bounce-short { animation: bounceShort 0.45s ease-in-out; }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+        /* --- Navegación --- */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(234, 221, 215, 0.7);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+        }
+
+        .logo-box {
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, var(--brand-500), var(--brand-700));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+            box-shadow: 0 4px 10px rgba(114, 78, 66, 0.25);
+        }
+
+        .logo-title {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: var(--brand-900);
+            display: block;
+            line-height: 1.1;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--brand-500);
+            display: block;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 0.95rem;
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid var(--brand-200);
+            background: #fff;
+            color: var(--brand-800);
+            transition: all 0.2s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .btn-outline:hover {
+            background: var(--brand-100);
+        }
+
+        .btn-cart {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
+            border-radius: 0.75rem;
+            background: var(--brand-800);
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(94, 64, 54, 0.2);
+        }
+
+        .btn-cart:hover {
+            background: var(--brand-900);
+            transform: translateY(-1px);
+        }
+
+        .cart-badge {
+            background: var(--whatsapp-500);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.125rem 0.5rem;
+            border-radius: 9999px;
+        }
+
+        /* --- Hero Banner --- */
+        .hero-section {
+            background: linear-gradient(135deg, var(--brand-100) 0%, var(--brand-50) 55%, #ffffff 100%);
+            padding: 2.75rem 0 3.75rem;
+            border-bottom: 1px solid rgba(234, 221, 215, 0.6);
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 7fr 5fr;
+                padding: 1rem 0;
+            }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.95rem;
+            border-radius: 9999px;
+            background: #fff;
+            border: 1px solid var(--brand-200);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--brand-700);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            margin-bottom: 1.25rem;
+        }
+
+        .ping-dot {
+            position: relative;
+            display: inline-flex;
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
+            background: var(--whatsapp-500);
+        }
+
+        .ping-dot::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--whatsapp-500);
+            animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: 2.35rem;
+            font-weight: 700;
+            color: var(--brand-900);
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+        }
+
+        @media (min-width: 640px) { .hero-title { font-size: 3.1rem; } }
+        @media (min-width: 1024px) { .hero-title { font-size: 3.5rem; } }
+
+        .hero-title span {
+            color: var(--brand-600);
+            font-style: italic;
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            color: var(--stone-600);
+            max-width: 38rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.875rem;
+        }
+
+        .btn-primary-lg {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.5rem;
+            border-radius: 1rem;
+            background: var(--brand-800);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 10px 20px -5px rgba(94, 64, 54, 0.35);
+            transition: all 0.25s;
+        }
+
+        .btn-primary-lg:hover {
+            background: var(--brand-900);
+            transform: translateY(-2px);
+        }
+
+        .btn-wa-lg {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.5rem;
+            border-radius: 1rem;
+            background: #fff;
+            color: var(--emerald-700);
+            border: 1px solid var(--emerald-200);
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: all 0.25s;
+        }
+
+        .btn-wa-lg:hover {
+            background: var(--emerald-50);
+            transform: translateY(-2px);
+        }
+
+        .hero-card {
+            position: relative;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 25px 50px -12px rgba(78, 54, 46, 0.25);
+        }
+
+        .hero-card img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.68) 0%, transparent 55%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            color: #fff;
+        }
+
+        .hero-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: var(--brand-600);
+            padding: 0.25rem 0.65rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* --- Barra de Filtros y Búsqueda --- */
+        .filter-bar {
+            margin: 2.25rem auto 1.5rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid var(--brand-100);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .filter-bar {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .cat-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.25rem;
+        }
+
+        .cat-list::-webkit-scrollbar { display: none; }
+
+        .cat-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: var(--brand-50);
+            color: var(--brand-800);
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .cat-btn:hover { background: var(--brand-100); }
+
+        .cat-btn.active {
+            background: var(--brand-800);
+            color: #fff;
+        }
+
+        .search-box {
+            position: relative;
+            min-width: 250px;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 0.875rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--stone-400);
+            font-size: 0.875rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.55rem 1rem 0.55rem 2.35rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--brand-200);
+            background: var(--brand-50);
+            font-size: 0.875rem;
+            color: var(--stone-800);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box input:focus {
+            background: #fff;
+            border-color: var(--brand-500);
+            box-shadow: 0 0 0 3px rgba(163, 123, 109, 0.15);
+        }
+
+        /* --- Cuadrícula de Productos --- */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding-bottom: 5rem;
+        }
+
+        @media (min-width: 640px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1280px) { .products-grid { grid-template-columns: repeat(4, 1fr); } }
+
+        .product-card {
+            background: #fff;
+            border-radius: 1.5rem;
+            border: 1px solid var(--brand-100);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 12px rgba(94, 64, 54, 0.04);
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgba(94, 64, 54, 0.12), 0 8px 10px -6px rgba(94, 64, 54, 0.08);
+        }
+
+        .product-img-wrap {
+            position: relative;
+            height: 15rem;
+            background: var(--brand-100);
+            overflow: hidden;
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .img-grayscale {
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+
+        .badge-cat {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--brand-900);
+            font-size: 0.75rem;
+            font-weight: 700;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .badge-stock {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 0.75rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .badge-ok { background: rgba(5, 150, 105, 0.92); }
+        .badge-low { background: var(--amber-500); animation: pulse 2s infinite; }
+        .badge-out { background: rgba(28, 25, 23, 0.9); }
+
+        .product-body {
+            padding: 1.25rem;
+        }
+
+        .product-material {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--brand-500);
+            margin-bottom: 0.25rem;
+        }
+
+        .product-name {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--brand-900);
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-includes {
+            font-size: 0.75rem;
+            color: var(--stone-500);
+        }
+
+        .product-footer {
+            padding: 0.875rem 1.25rem 1.25rem;
+            border-top: 1px solid var(--brand-50);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .price-label {
+            font-size: 0.7rem;
+            color: var(--stone-400);
+            display: block;
+        }
+
+        .price-val {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--brand-900);
+        }
+
+        .card-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-wa-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.75rem;
+            background: var(--emerald-50);
+            color: var(--whatsapp-600);
+            border: 1px solid var(--emerald-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+            transition: all 0.2s;
+        }
+
+        .btn-wa-icon:hover {
+            background: var(--whatsapp-500);
+            color: #fff;
+        }
+
+        .btn-add-cart {
+            padding: 0.625rem 0.95rem;
+            border-radius: 0.75rem;
+            background: var(--brand-800);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            transition: all 0.2s;
+        }
+
+        .btn-add-cart:hover:not(:disabled) {
+            background: var(--brand-900);
+        }
+
+        .btn-add-cart:disabled {
+            background: #f5f5f4;
+            color: var(--stone-400);
+            cursor: not-allowed;
+        }
+
+        /* --- Panel de Inventario (Admin) --- */
+        .admin-section {
+            padding: 2.5rem 0 4rem;
+        }
+
+        .admin-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .wa-config-box {
+            background: var(--emerald-50);
+            border: 1px solid var(--emerald-200);
+            border-radius: 1rem;
+            padding: 1.25rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 640px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .kpi-grid { grid-template-columns: repeat(4, 1fr); } }
+
+        .kpi-card {
+            background: #fff;
+            padding: 1.25rem;
+            border-radius: 1rem;
+            border: 1px solid var(--brand-100);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .table-card {
+            background: #fff;
+            border-radius: 1rem;
+            border: 1px solid var(--brand-100);
+            overflow-x: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.875rem;
+        }
+
+        th {
+            background: var(--brand-50);
+            padding: 1rem 1.25rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--brand-800);
+            border-bottom: 1px solid var(--brand-100);
+        }
+
+        td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--brand-100);
+            vertical-align: middle;
+        }
+
+        /* --- Drawer Carrito & Modales --- */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(28, 25, 23, 0.55);
+            backdrop-filter: blur(3px);
+            z-index: 50;
+            transition: opacity 0.3s ease;
+        }
+
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            max-width: 430px;
+            background: #fff;
+            z-index: 55;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .drawer.open {
+            transform: translateX(0);
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(28, 25, 23, 0.6);
+            backdrop-filter: blur(3px);
+            z-index: 60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .modal-box {
+            background: #fff;
+            border-radius: 1.5rem;
+            max-width: 32rem;
+            width: 100%;
+            padding: 1.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.65rem 0.9rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--brand-200);
+            background: #fff;
+            font-size: 0.875rem;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: var(--brand-500);
+            box-shadow: 0 0 0 3px rgba(163, 123, 109, 0.15);
+        }
+
+        .btn-wa-checkout {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            background: var(--whatsapp-500);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            box-shadow: 0 10px 20px -5px rgba(37, 211, 102, 0.4);
+            transition: all 0.2s;
+        }
+
+        .btn-wa-checkout:hover {
+            background: var(--whatsapp-600);
+        }
+
+        /* Botón Flotante WhatsApp */
+        .floating-wa {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 35;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 9999px;
+            background: var(--whatsapp-500);
+            color: #fff;
+            font-size: 1.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+            transition: transform 0.2s;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1);
+            background: var(--whatsapp-600);
+        }
+
+        /* Toast Container */
+        #toast-container {
+            position: fixed;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 70;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 90%;
+            max-width: 26rem;
+            pointer-events: none;
+        }
+
+        .toast-item {
+            padding: 0.85rem 1.1rem;
+            border-radius: 1rem;
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: fadeUp 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor de Notificaciones -->
+    <div id="toast-container"></div>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <div class="logo-group" onclick="switchView('store')">
+                <div class="logo-box">
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+                <div>
+                    <span class="logo-title">Tendi2Quebradas</span>
+                    <span class="logo-sub">Herrera • Hogar & Confort</span>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <button id="toggle-admin-btn" onclick="toggleView()" class="btn-outline">
+                    <i id="toggle-icon" class="fa-solid fa-boxes-stacked" style="color: var(--brand-600);"></i>
+                    <span id="toggle-text">Inventario</span>
+                </button>
+
+                <button id="cart-btn" onclick="toggleCart(true)" class="btn-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Mi Pedido</span>
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- VISTA 1: TIENDA / CATÁLOGO PARA CLIENTES   -->
+    <!-- ========================================== -->
+    <main id="store-view">
+        
+        <!-- Hero Banner -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div>
+                    <div class="hero-badge">
+                        <span class="ping-dot"></span>
+                        Atención inmediata por WhatsApp • Envíos seguros
+                    </div>
+                    <h1 class="hero-title">
+                        Viste tu cama con <span>suavidad y elegancia</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Descubre nuestra colección exclusiva en <strong>Tendi2Quebradas Herrera</strong>. Elige tus diseños favoritos, verifica disponibilidad en tiempo real y finaliza tu pedido directo en nuestro WhatsApp.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#catalogo" class="btn-primary-lg">
+                            Explorar Catálogo <i class="fa-solid fa-arrow-down" style="font-size: 0.8rem;"></i>
+                        </a>
+                        <button onclick="contactDirectWhatsApp()" class="btn-wa-lg">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem; color: var(--whatsapp-500);"></i> Asesoría Personalizada
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="hero-card animate-float">
+                        <img src="https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/800x600/eaddd7/5e4036?text=Tendi2Quebradas+Herrera'"
+                             alt="Tendidos de lujo Tendi2Quebradas Herrera">
+                        <div class="hero-card-overlay">
+                            <div>
+                                <span class="hero-tag">Nueva Colección</span>
+                                <p style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; margin-top: 0.35rem;">
+                                    Confort térmico y telas antialérgicas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros y Buscador -->
+        <section id="catalogo" class="container">
+            <div class="filter-bar">
+                <div class="cat-list" id="category-filters">
+                    <button onclick="filterCategory('Todos')" class="cat-btn active">Todos</button>
+                    <button onclick="filterCategory('Sencillo')" class="cat-btn">Sencillo (1.00m)</button>
+                    <button onclick="filterCategory('Semidoble')" class="cat-btn">Semidoble (1.20m)</button>
+                    <button onclick="filterCategory('Doble')" class="cat-btn">Doble (1.40m)</button>
+                    <button onclick="filterCategory('Queen / King')" class="cat-btn">Queen / King</button>
+                    <button onclick="filterCategory('Cobijas y Edredones')" class="cat-btn">Edredones</button>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" oninput="renderStoreCatalog()" placeholder="Buscar diseño, tela o color...">
+                </div>
+            </div>
+
+            <!-- Cuadrícula de Productos -->
+            <div id="products-grid" class="products-grid"></div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- VISTA 2: PANEL DE GESTIÓN DE INVENTARIO    -->
+    <!-- ========================================== -->
+    <section id="admin-view" class="container admin-section hidden">
+        
+        <div class="admin-header">
+            <div>
+                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--brand-600); background: var(--brand-100); padding: 0.25rem 0.75rem; border-radius: 9999px;">
+                    Panel Administrativo
+                </span>
+                <h2 style="font-family: var(--font-serif); font-size: 1.85rem; font-weight: 700; color: var(--brand-900); margin-top: 0.5rem;">
+                    Gestión de Inventario y Ventas
+                </h2>
+                <p style="font-size: 0.875rem; color: var(--stone-500);">
+                    Controla existencias, agrega nuevos tendidos y configura tu número de WhatsApp.
+                </p>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+                <button onclick="openProductModal()" class="btn-cart" style="padding: 0.75rem 1.25rem;">
+                    <i class="fa-solid fa-plus"></i> Nuevo Tendido
+                </button>
+                <button onclick="resetDemoData()" class="btn-outline" title="Restaurar inventario de ejemplo">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Configuración WhatsApp -->
+        <div class="wa-config-box">
+            <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background: var(--whatsapp-500); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <h3 style="font-weight: 700; color: var(--emerald-800); font-size: 0.9rem;">Número de Recepción de Pedidos (WhatsApp)</h3>
+                    <p style="font-size: 0.75rem; color: var(--emerald-700);">Incluye código de país, ej: 57 para Colombia.</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <input type="text" id="business-whatsapp-input" value="573001234567" class="form-input" style="width: 12rem; font-weight: 600;">
+                <button onclick="saveWhatsAppNumber()" style="padding: 0.6rem 1rem; border-radius: 0.75rem; background: var(--whatsapp-600); color: #fff; font-weight: 600; font-size: 0.85rem;">
+                    Guardar
+                </button>
+            </div>
+        </div>
+
+        <!-- Tarjetas de Métricas -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--stone-500); text-transform: uppercase;">
+                    <span>Referencias Activas</span>
+                    <i class="fa-solid fa-tags" style="color: var(--brand-500);"></i>
+                </div>
+                <p id="kpi-total-refs" style="font-size: 1.65rem; font-weight: 700; color: var(--brand-900); margin-top: 0.5rem;">0</p>
+            </div>
+            <div class="kpi-card">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--stone-500); text-transform: uppercase;">
+                    <span>Unidades en Stock</span>
+                    <i class="fa-solid fa-cubes" style="color: var(--blue-600);"></i>
+                </div>
+                <p id="kpi-total-stock" style="font-size: 1.65rem; font-weight: 700; color: var(--brand-900); margin-top: 0.5rem;">0</p>
+            </div>
+            <div class="kpi-card">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--stone-500); text-transform: uppercase;">
+                    <span>Valor del Inventario</span>
+                    <i class="fa-solid fa-sack-dollar" style="color: var(--emerald-600);"></i>
+                </div>
+                <p id="kpi-inventory-value" style="font-size: 1.65rem; font-weight: 700; color: var(--emerald-700); margin-top: 0.5rem;">$0</p>
+            </div>
+            <div class="kpi-card">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--stone-500); text-transform: uppercase;">
+                    <span>Stock Bajo (≤ 3)</span>
+                    <i class="fa-solid fa-triangle-exclamation" style="color: var(--amber-500);"></i>
+                </div>
+                <p id="kpi-low-stock" style="font-size: 1.65rem; font-weight: 700; color: var(--amber-600); margin-top: 0.5rem;">0</p>
+            </div>
+        </div>
+
+        <!-- Tabla de Inventario -->
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto / Diseño</th>
+                        <th>Medida</th>
+                        <th>Precio Venta</th>
+                        <th style="text-align: center;">Control Stock</th>
+                        <th>Estado</th>
+                        <th style="text-align: right;">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-table-body"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- DRAWER LATERAL: CARRITO DE COMPRAS         -->
+    <!-- ========================================== -->
+    <div id="cart-overlay" onclick="toggleCart(false)" class="overlay hidden" style="opacity: 0;"></div>
+    
+    <aside id="cart-drawer" class="drawer">
+        <div style="padding: 1.5rem; border-bottom: 1px solid var(--brand-100); display: flex; justify-content: space-between; align-items: center; background: var(--brand-50);">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background: var(--brand-800); color: #fff; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div>
+                    <h3 style="font-family: var(--font-serif); font-weight: 700; font-size: 1.125rem; color: var(--brand-900);">Tu Pedido</h3>
+                    <p style="font-size: 0.75rem; color: var(--stone-500);">Tendi2Quebradas Herrera</p>
+                </div>
+            </div>
+            <button onclick="toggleCart(false)" class="btn-outline" style="padding: 0.5rem 0.75rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div id="cart-items-container" style="flex: 1; overflow-y: auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.85rem;"></div>
+
+        <div id="cart-footer" style="padding: 1.5rem; border-top: 1px solid var(--brand-100); background: var(--brand-50); display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+                <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Tu Nombre *</label>
+                <input type="text" id="customer-name" placeholder="Ej: Laura Gómez" class="form-input">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <div>
+                    <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Barrio / Ciudad *</label>
+                    <input type="text" id="customer-city" placeholder="Ej: Dosquebradas" class="form-input">
+                </div>
+                <div>
+                    <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Pago</label>
+                    <select id="customer-payment" class="form-input">
+                        <option value="Nequi / Daviplata">Nequi / Daviplata</option>
+                        <option value="Transferencia Bancolombia">Bancolombia</option>
+                        <option value="Contraentrega (Efectivo)">Contraentrega</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem; border-top: 1px solid var(--brand-200);">
+                <span style="font-size: 0.875rem; font-weight: 600; color: var(--stone-600);">Total Estimado:</span>
+                <span id="cart-total-price" style="font-size: 1.5rem; font-weight: 700; color: var(--brand-900);">$0</span>
+            </div>
+
+            <button onclick="checkoutViaWhatsApp()" class="btn-wa-checkout">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.5rem;"></i>
+                <span>Pedir por WhatsApp</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ========================================== -->
+    <!-- MODAL: AGREGAR / EDITAR PRODUCTO           -->
+    <!-- ========================================== -->
+    <div id="product-modal" class="modal-backdrop hidden">
+        <div class="modal-box animate-fade-up">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+                <h3 id="modal-title" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; color: var(--brand-900);">
+                    Agregar Nuevo Tendido
+                </h3>
+                <button onclick="closeProductModal()" class="btn-outline" style="padding: 0.45rem 0.7rem;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="product-form" onsubmit="saveProduct(event)" style="display: flex; flex-direction: column; gap: 0.9rem;">
+                <input type="hidden" id="prod-id">
+                
+                <div>
+                    <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Nombre del Tendido / Diseño *</label>
+                    <input type="text" id="prod-name" required placeholder="Ej: Juego Sábanas Algodón Egipcio Terracota" class="form-input">
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Medida *</label>
+                        <select id="prod-category" class="form-input">
+                            <option value="Sencillo">Sencillo (1.00m)</option>
+                            <option value="Semidoble">Semidoble (1.20m)</option>
+                            <option value="Doble">Doble (1.40m)</option>
+                            <option value="Queen / King">Queen / King</option>
+                            <option value="Cobijas y Edredones">Cobijas y Edredones</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Material / Tela *</label>
+                        <input type="text" id="prod-material" required placeholder="Ej: Microfibra 300 Hilos" class="form-input">
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Precio Venta ($) *</label>
+                        <input type="number" id="prod-price" required min="1000" step="500" placeholder="85000" class="form-input">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Stock *</label>
+                        <input type="number" id="prod-stock" required min="0" placeholder="10" class="form-input">
+                    </div>
+                </div>
+
+                <div>
+                    <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">URL de Fotografía (Opcional)</label>
+                    <input type="url" id="prod-image" placeholder="https://..." class="form-input">
+                </div>
+
+                <div>
+                    <label style="display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">Incluye (Piezas)</label>
+                    <input type="text" id="prod-includes" placeholder="Ej: Sábana ajustable, sobresábana y 2 fundas" class="form-input">
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; gap: 0.65rem; margin-top: 0.5rem;">
+                    <button type="button" onclick="closeProductModal()" class="btn-outline">Cancelar</button>
+                    <button type="submit" class="btn-cart" style="padding: 0.65rem 1.25rem;">Guardar Producto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botón Flotante WhatsApp -->
+    <button onclick="contactDirectWhatsApp()" title="Chatear con Tendi2Quebradas Herrera" class="floating-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+    <!-- ========================================== -->
+    <!-- LÓGICA DE NEGOCIO, INVENTARIO Y WHATSAPP   -->
+    <!-- ========================================== -->
+    <script>
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 'TQ-101',
+                name: 'Tendido Nórdico Beige Arena',
+                category: 'Doble',
+                material: 'Algodón Poliéster 280 Hilos',
+                price: 78000,
+                stock: 8,
+                includes: 'Sábana ajustable, sobresábana y 2 fundas',
+                image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=700&q=80'
+            },
+            {
+                id: 'TQ-102',
+                name: 'Edredón Doble Faz Gris Perla & Blanco',
+                category: 'Cobijas y Edredones',
+                material: 'Microfibra Siliconada Suave',
+                price: 135000,
+                stock: 4,
+                includes: 'Edredón acolchado + 2 fundas decorativas',
+                image: 'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=700&q=80'
+            },
+            {
+                id: 'TQ-103',
+                name: 'Juego Sábanas Terracota Bohemio',
+                category: 'Queen / King',
+                material: 'Algodón Peinado Premium',
+                price: 95000,
+                stock: 2,
+                includes: 'Sábana ajustable profunda + sobresábana + 2 fundas king',
+                image: 'https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=700&q=80'
+            },
+            {
+                id: 'TQ-104',
+                name: 'Tendido Juvenil Geométrico Azul',
+                category: 'Semidoble',
+                material: 'Microfibra Antialérgica',
+                price: 65000,
+                stock: 12,
+                includes: 'Sábana ajustable, sobresábana y 1 funda',
+                image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80'
+            },
+            {
+                id: 'TQ-105',
+                name: 'Tendido Infantil Nubes & Estrellas',
+                category: 'Sencillo',
+                material: 'Algodón Suave al Tacto',
+                price: 55000,
+                stock: 6,
+                includes: 'Sábana ajustable, sobresábana y 1 funda',
+                image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=700&q=80'
+            },
+            {
+                id: 'TQ-106',
+                name: 'Juego Blanco Hotelero Lujo',
+                category: 'Queen / King',
+                material: 'Satín de Algodón 400 Hilos',
+                price: 115000,
+                stock: 0,
+                includes: 'Sábana ajustable, sobresábana y 2 fundas',
+                image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80'
+            }
+        ];
+
+        let products = JSON.parse(localStorage.getItem('tq_inventory')) || [...DEFAULT_PRODUCTS];
+        let cart = JSON.parse(localStorage.getItem('tq_cart')) || [];
+        let businessWhatsApp = localStorage.getItem('tq_whatsapp') || '573001234567';
+        let currentCategory = 'Todos';
+        let currentView = 'store';
+
+        const formatCurrency = (val) => {
+            return new Intl.NumberFormat('es-CO', {
+                style: 'currency',
+                currency: 'COP',
+                maximumFractionDigits: 0
+            }).format(val);
+        };
+
+        function persistData() {
+            localStorage.setItem('tq_inventory', JSON.stringify(products));
+            localStorage.setItem('tq_cart', JSON.stringify(cart));
+            localStorage.setItem('tq_whatsapp', businessWhatsApp);
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            const bgColor = type === 'success' ? 'var(--brand-900)' : 
+                            type === 'warning' ? 'var(--amber-600)' : 'var(--red-600)';
+            const icon = type === 'success' ? 'fa-circle-check' : 
+                         type === 'warning' ? 'fa-triangle-exclamation' : 'fa-circle-xmark';
+
+            toast.className = 'toast-item';
+            toast.style.backgroundColor = bgColor;
+            toast.innerHTML = `<i class="fa-solid ${icon}"></i> <span>${message}</span>`;
+            
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function toggleView() {
+            switchView(currentView === 'store' ? 'admin' : 'store');
+        }
+
+        function switchView(view) {
+            currentView = view;
+            const storeView = document.getElementById('store-view');
+            const adminView = document.getElementById('admin-view');
+            const toggleText = document.getElementById('toggle-text');
+            const toggleIcon = document.getElementById('toggle-icon');
+
+            if (view === 'admin') {
+                storeView.classList.add('hidden');
+                adminView.classList.remove('hidden');
+                toggleText.textContent = 'Ver Tienda';
+                toggleIcon.className = 'fa-solid fa-store';
+                document.getElementById('business-whatsapp-input').value = businessWhatsApp;
+                renderInventoryTable();
+            } else {
+                adminView.classList.add('hidden');
+                storeView.classList.remove('hidden');
+                toggleText.textContent = 'Inventario';
+                toggleIcon.className = 'fa-solid fa-boxes-stacked';
+                renderStoreCatalog();
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.textContent.trim().startsWith(category) || (category === 'Todos' && btn.textContent.trim() === 'Todos')) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            renderStoreCatalog();
+        }
+
+        function renderStoreCatalog() {
+            const grid = document.getElementById('products-grid');
+            const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+
+            const filtered = products.filter(p => {
+                const matchCat = currentCategory === 'Todos' || p.category === currentCategory;
+                const matchSearch = p.name.toLowerCase().includes(searchTerm) || 
+                                    p.material.toLowerCase().includes(searchTerm) ||
+                                    p.category.toLowerCase().includes(searchTerm);
+                return matchCat && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; background: #fff; border-radius: 1.5rem; border: 1px solid var(--brand-100);">
+                        <i class="fa-solid fa-bed" style="font-size: 2.5rem; color: var(--brand-300); margin-bottom: 0.75rem;"></i>
+                        <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--brand-900);">No encontramos tendidos con ese filtro</h3>
+                        <p style="font-size: 0.875rem; color: var(--stone-500); margin-top: 0.25rem;">Intenta buscar otra medida o diseño.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map((product, index) => {
+                const isOutOfStock = product.stock <= 0;
+                const isLowStock = product.stock > 0 && product.stock <= 3;
+
+                return `
+                <article class="product-card animate-fade-up" style="animation-delay: ${index * 50}ms">
+                    <div>
+                        <div class="product-img-wrap">
+                            <img src="${product.image}" 
+                                 onerror="this.src='https://placehold.co/600x500/eaddd7/5e4036?text=${encodeURIComponent(product.name)}'"
+                                 alt="${product.name}" 
+                                 class="${isOutOfStock ? 'img-grayscale' : ''}">
+                            
+                            <span class="badge-cat">${product.category}</span>
+
+                            ${isOutOfStock ? `
+                                <span class="badge-stock badge-out">Agotado</span>
+                            ` : isLowStock ? `
+                                <span class="badge-stock badge-low">¡Últimas ${product.stock} und!</span>
+                            ` : `
+                                <span class="badge-stock badge-ok">Disponible (${product.stock})</span>
+                            `}
+                        </div>
+
+                        <div class="product-body">
+                            <p class="product-material">${product.material}</p>
+                            <h3 class="product-name">${product.name}</h3>
+                            <p class="product-includes">
+                                <i class="fa-solid fa-check" style="color: var(--brand-500); margin-right: 0.25rem;"></i> ${product.includes || 'Juego completo'}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-footer">
+                        <div>
+                            <span class="price-label">Precio</span>
+                            <span class="price-val">${formatCurrency(product.price)}</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button onclick="quickWhatsAppInquiry('${product.id}')" title="Consultar este diseño por WhatsApp" class="btn-wa-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+
+                            <button onclick="addToCart('${product.id}')" ${isOutOfStock ? 'disabled' : ''} class="btn-add-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span>${isOutOfStock ? 'Sin Stock' : 'Agregar'}</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                `;
+            }).join('');
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product || product.stock <= 0) {
+                showToast('Este tendido se encuentra agotado.', 'error');
+                return;
+            }
+
+            const existingItem = cart.find(item => item.id === productId);
+            if (existingItem) {
+                if (existingItem.qty >= product.stock) {
+                    showToast(`Solo tenemos ${product.stock} unidades disponibles de este diseño.`, 'warning');
+                    return;
+                }
+                existingItem.qty += 1;
+            } else {
+                cart.push({ id: productId, qty: 1 });
+            }
+
+            persistData();
+            updateCartUI();
+            
+            const badge = document.getElementById('cart-badge');
+            badge.classList.remove('animate-bounce-short');
+            void badge.offsetWidth;
+            badge.classList.add('animate-bounce-short');
+
+            showToast(`"${product.name}" agregado a tu pedido.`);
+        }
+
+        function updateCartQty(productId, delta) {
+            const itemIndex = cart.findIndex(i => i.id === productId);
+            if (itemIndex === -1) return;
+
+            const product = products.find(p => p.id === productId);
+            const newQty = cart[itemIndex].qty + delta;
+
+            if (newQty <= 0) {
+                cart.splice(itemIndex, 1);
+            } else if (product && newQty > product.stock) {
+                showToast(`Stock máximo disponible: ${product.stock} unidades.`, 'warning');
+                return;
+            } else {
+                cart[itemIndex].qty = newQty;
+            }
+
+            persistData();
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+            document.getElementById('cart-badge').textContent = totalItems;
+
+            const container = document.getElementById('cart-items-container');
+            const footer = document.getElementById('cart-footer');
+            let totalAmount = 0;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div style="height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2.5rem 0;">
+                        <div style="width: 4rem; height: 4rem; border-radius: 9999px; background: var(--brand-100); color: var(--brand-500); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h4 style="font-family: var(--font-serif); font-weight: 700; font-size: 1.125rem; color: var(--brand-900);">Tu bolsa está vacía</h4>
+                        <p style="font-size: 0.75rem; color: var(--stone-500); max-width: 16rem; margin-top: 0.25rem;">Explora nuestro catálogo y elige los tendidos ideales para tu habitación.</p>
+                    </div>
+                `;
+                footer.classList.add('hidden');
+                return;
+            }
+
+            footer.classList.remove('hidden');
+
+            container.innerHTML = cart.map(item => {
+                const product = products.find(p => p.id === item.id);
+                if (!product) return '';
+                const subtotal = product.price * item.qty;
+                totalAmount += subtotal;
+
+                return `
+                <div style="display: flex; gap: 0.85rem; background: var(--brand-50); padding: 0.75rem; border-radius: 1rem; border: 1px solid var(--brand-100); align-items: center;">
+                    <img src="${product.image}" 
+                         onerror="this.src='https://placehold.co/100x100/eaddd7/5e4036?text=Tendido'"
+                         style="width: 4rem; height: 4rem; border-radius: 0.75rem; object-fit: cover; flex-shrink: 0;">
+                    <div style="flex: 1; min-width: 0;">
+                        <span style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: var(--brand-500);">${product.category}</span>
+                        <h4 style="font-weight: 700; font-size: 0.875rem; color: var(--brand-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${product.name}</h4>
+                        <p style="font-size: 0.75rem; font-weight: 600; color: var(--stone-600); margin-top: 0.15rem;">${formatCurrency(subtotal)}</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.4rem; background: #fff; padding: 0.25rem 0.5rem; border-radius: 0.75rem; border: 1px solid var(--brand-200);">
+                        <button onclick="updateCartQty('${product.id}', -1)" style="width: 1.5rem; height: 1.5rem; font-weight: 700; color: var(--stone-600);">-</button>
+                        <span style="font-size: 0.75rem; font-weight: 700; width: 1rem; text-align: center;">${item.qty}</span>
+                        <button onclick="updateCartQty('${product.id}', 1)" style="width: 1.5rem; height: 1.5rem; font-weight: 700; color: var(--stone-600);">+</button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            document.getElementById('cart-total-price').textContent = formatCurrency(totalAmount);
+        }
+
+        function toggleCart(open) {
+            const overlay = document.getElementById('cart-overlay');
+            const drawer = document.getElementById('cart-drawer');
+
+            if (open) {
+                updateCartUI();
+                overlay.classList.remove('hidden');
+                setTimeout(() => {
+                    overlay.style.opacity = '1';
+                    drawer.classList.add('open');
+                }, 10);
+            } else {
+                overlay.style.opacity = '0';
+                drawer.classList.remove('open');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+
+        function checkoutViaWhatsApp() {
+            const name = document.getElementById('customer-name').value.trim();
+            const city = document.getElementById('customer-city').value.trim();
+            const payment = document.getElementById('customer-payment').value;
+
+            if (!name || !city) {
+                showToast('Por favor ingresa tu nombre y ciudad/barrio para el envío.', 'warning');
+                return;
+            }
+
+            if (cart.length === 0) return;
+
+            let total = 0;
+            let itemsListText = '';
+
+            cart.forEach(item => {
+                const product = products.find(p => p.id === item.id);
+                if (product) {
+                    const subtotal = product.price * item.qty;
+                    total += subtotal;
+                    itemsListText += `• *${item.qty}x* ${product.name} (${product.category}) - ${formatCurrency(subtotal)}\n`;
+                    product.stock = Math.max(0, product.stock - item.qty);
+                }
+            });
+
+            const message = 
+`¡Hola *Tendi2Quebradas Herrera*! 🛏️✨
+Quiero realizar el siguiente pedido:
+
+*Cliente:* ${name}
+*Ubicación:* ${city}
+*Medio de pago:* ${payment}
+
+*Detalle del Pedido:*
+${itemsListText}
+*Total a pagar:* ${formatCurrency(total)}
+
+Quedo atento(a) para confirmar disponibilidad y envío. ¡Gracias!`;
+
+            cart = [];
+            persistData();
+            updateCartUI();
+            renderStoreCatalog();
+            if (currentView === 'admin') renderInventoryTable();
+            toggleCart(false);
+
+            showToast('¡Pedido generado! Redirigiendo a WhatsApp...');
+
+            const encodedMsg = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${businessWhatsApp}?text=${encodedMsg}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function quickWhatsAppInquiry(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const msg = `¡Hola *Tendi2Quebradas Herrera*! 👋 Me interesa este producto de su catálogo:\n\n🛏️ *${product.name}*\n📏 Medida: ${product.category}\n💰 Precio: ${formatCurrency(product.price)}\n\n¿Me podrían brindar más información o fotos reales?`;
+            window.open(`https://wa.me/${businessWhatsApp}?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        function contactDirectWhatsApp() {
+            const msg = `¡Hola *Tendi2Quebradas Herrera*! 👋 Vengo de su catálogo web y me gustaría recibir asesoría sobre los tendidos disponibles.`;
+            window.open(`https://wa.me/${businessWhatsApp}?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        function saveWhatsAppNumber() {
+            const input = document.getElementById('business-whatsapp-input').value.replace(/\D/g, '');
+            if (input.length < 10) {
+                showToast('Ingresa un número válido con código de país (Ej: 573001234567).', 'error');
+                return;
+            }
+            businessWhatsApp = input;
+            persistData();
+            showToast('Número de WhatsApp actualizado correctamente.');
+        }
+
+        function renderInventoryTable() {
+            const tbody = document.getElementById('inventory-table-body');
+            
+            const totalRefs = products.length;
+            const totalStock = products.reduce((sum, p) => sum + p.stock, 0);
+            const totalValue = products.reduce((sum, p) => sum + (p.price * p.stock), 0);
+            const lowStockCount = products.filter(p => p.stock <= 3).length;
+
+            document.getElementById('kpi-total-refs').textContent = totalRefs;
+            document.getElementById('kpi-total-stock').textContent = `${totalStock} und.`;
+            document.getElementById('kpi-inventory-value').textContent = formatCurrency(totalValue);
+            document.getElementById('kpi-low-stock').textContent = lowStockCount;
+
+            tbody.innerHTML = products.map(p => {
+                const statusBadge = p.stock === 0 
+                    ? `<span style="padding: 0.25rem 0.65rem; border-radius: 9999px; background: var(--red-100); color: var(--red-700); font-size: 0.75rem; font-weight: 700;">Agotado</span>`
+                    : p.stock <= 3 
+                    ? `<span style="padding: 0.25rem 0.65rem; border-radius: 9999px; background: var(--amber-100); color: var(--amber-800); font-size: 0.75rem; font-weight: 700;">Stock Bajo</span>`
+                    : `<span style="padding: 0.25rem 0.65rem; border-radius: 9999px; background: var(--emerald-100); color: var(--emerald-800); font-size: 0.75rem; font-weight: 700;">Óptimo</span>`;
+
+                return `
+                <tr>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <img src="${p.image}" onerror="this.src='https://placehold.co/80x80/eaddd7/5e4036?text=TQ'" style="width: 2.75rem; height: 2.75rem; border-radius: 0.75rem; object-fit: cover; border: 1px solid var(--brand-100);">
+                            <div>
+                                <p style="font-weight: 700; color: var(--brand-900);">${p.name}</p>
+                                <p style="font-size: 0.75rem; color: var(--stone-400);">${p.material}</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span style="padding: 0.25rem 0.65rem; border-radius: 0.5rem; background: var(--brand-100); color: var(--brand-800); font-size: 0.75rem; font-weight: 600;">${p.category}</span>
+                    </td>
+                    <td style="font-weight: 700; color: var(--stone-800);">
+                        ${formatCurrency(p.price)}
+                    </td>
+                    <td>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                            <button onclick="adjustStock('${p.id}', -1)" style="width: 1.75rem; height: 1.75rem; border-radius: 0.5rem; background: #f5f5f4; font-weight: 700;">-</button>
+                            <span style="width: 2rem; text-align: center; font-weight: 700; color: var(--brand-900);">${p.stock}</span>
+                            <button onclick="adjustStock('${p.id}', 1)" style="width: 1.75rem; height: 1.75rem; border-radius: 0.5rem; background: #f5f5f4; font-weight: 700;">+</button>
+                        </div>
+                    </td>
+                    <td>${statusBadge}</td>
+                    <td style="text-align: right;">
+                        <button onclick="openProductModal('${p.id}')" style="padding: 0.45rem; border-radius: 0.5rem; color: var(--blue-600);" title="Editar">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button onclick="deleteProduct('${p.id}')" style="padding: 0.45rem; border-radius: 0.5rem; color: var(--red-600);" title="Eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+                `;
+            }).join('');
+        }
+
+        function adjustStock(productId, delta) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            product.stock = Math.max(0, product.stock + delta);
+            persistData();
+            renderInventoryTable();
+        }
+
+        function openProductModal(productId = null) {
+            const modal = document.getElementById('product-modal');
+            const title = document.getElementById('modal-title');
+            const form = document.getElementById('product-form');
+
+            if (productId) {
+                const p = products.find(item => item.id === productId);
+                title.textContent = 'Editar Tendido';
+                document.getElementById('prod-id').value = p.id;
+                document.getElementById('prod-name').value = p.name;
+                document.getElementById('prod-category').value = p.category;
+                document.getElementById('prod-material').value = p.material;
+                document.getElementById('prod-price').value = p.price;
+                document.getElementById('prod-stock').value = p.stock;
+                document.getElementById('prod-image').value = p.image;
+                document.getElementById('prod-includes').value = p.includes || '';
+            } else {
+                title.textContent = 'Agregar Nuevo Tendido';
+                form.reset();
+                document.getElementById('prod-id').value = '';
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        function saveProduct(event) {
+            event.preventDefault();
+            const id = document.getElementById('prod-id').value;
+            const defaultImg = 'https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=700&q=80';
+            
+            const productData = {
+                id: id || 'TQ-' + Date.now().toString().slice(-4),
+                name: document.getElementById('prod-name').value.trim(),
+                category: document.getElementById('prod-category').value,
+                material: document.getElementById('prod-material').value.trim(),
+                price: parseInt(document.getElementById('prod-price').value, 10),
+                stock: parseInt(document.getElementById('prod-stock').value, 10),
+                image: document.getElementById('prod-image').value.trim() || defaultImg,
+                includes: document.getElementById('prod-includes').value.trim()
+            };
+
+            if (id) {
+                const index = products.findIndex(p => p.id === id);
+                if (index !== -1) products[index] = productData;
+                showToast('Tendido actualizado en el inventario.');
+            } else {
+                products.unshift(productData);
+                showToast('Nuevo tendido agregado al catálogo.');
+            }
+
+            persistData();
+            closeProductModal();
+            renderInventoryTable();
+        }
+
+        function deleteProduct(productId) {
+            products = products.filter(p => p.id !== productId);
+            cart = cart.filter(c => c.id !== productId);
+            persistData();
+            renderInventoryTable();
+            updateCartUI();
+            showToast('Producto eliminado del inventario.');
+        }
+
+        function resetDemoData() {
+            products = [...DEFAULT_PRODUCTS];
+            cart = [];
+            persistData();
+            renderInventoryTable();
+            updateCartUI();
+            showToast('Inventario restaurado a los valores de demostración.');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderStoreCatalog();
+            updateCartUI();
+        });
+    </script>
+</body>
+</html>
